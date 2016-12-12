@@ -14,4 +14,37 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Hello World!" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/send_sms_button"
+        android:text="@string/send_sms"
+        android:layout_marginBottom="119dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:ems="10"
+        android:layout_marginTop="73dp"
+        android:id="@+id/phone_number_edit_text"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:hint="@string/phone_number" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_below="@+id/phone_number_edit_text"
+        android:layout_alignRight="@+id/phone_number_edit_text"
+        android:layout_alignEnd="@+id/phone_number_edit_text"
+        android:layout_marginTop="71dp"
+        android:id="@+id/sms_body_edit_text"
+        android:hint="@string/sms_body" />
+
 </RelativeLayout>
